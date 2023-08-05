@@ -35,14 +35,10 @@ Here are some examples of requests you can use to interact with the API:
 GET http://localhost:8080/products
 </pre>
 </li>
-<li>Get a specific product by ID:
-<pre>
-GET http://localhost:8080/products/1
-</pre>
 </li>
 <li>Create a new product:
 <pre>
-POST http://localhost:8080/products
+POST http://localhost:8080/products/save
 {
    "name": "Product Name",
    "description": "Product Description",
@@ -52,7 +48,7 @@ POST http://localhost:8080/products
 </li>
 <li>Update an existing product:
 <pre>
-PUT http://localhost:8080/products/1
+PUT http://localhost:8080/products/put
 {
    "name": "New Product Name",
    "description": "New Product Description",
@@ -62,7 +58,7 @@ PUT http://localhost:8080/products/1
 </li>
 <li>Delete an existing product:
 <pre>
-DELETE http://localhost:8080/products/1
+DELETE http://localhost:8080/products//delete/{name}
 </pre>
 </li>
 </ul>
