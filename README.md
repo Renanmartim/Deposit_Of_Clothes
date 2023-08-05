@@ -5,6 +5,10 @@ git clone https://github.com/[your-username]/stock-management-api.git
 cd stock-management-api
 mvn clean install
 </pre>
+
+<h2>Important Context</h2>
+<p>this api works with UUID, in turn it is not possible to iterate by product id, see in detail what this attribute is: https://www.baeldung.com/java-uuid</p>
+
 <h2>Execution</h2>
 
 To run the API you will need to start Spring Boot using the following command:
