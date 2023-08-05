@@ -18,8 +18,8 @@ The API provides the following endpoints:
 
 <ul>
 <li>/products: Gets a list of all products.</li>
-<li>/products/price-biggest: Gets a list of all products from biggest to smallest.</li>
-<li>/products/price-lowest: Gets a list of all products from smallest to largest.</li>
+<li>/products/price-biggest: Gets a list of all products from biggest price to smallest price.</li>
+<li>/products/price-lowest: Gets a list of all products from smallest price to largest price.</li>
 <li>/products/save: Creates a new product.</li>
 <li>/products/put: Updates an existing product.</li>
 <li>/products/delete/{name}: Deletes an existing product.</li>
