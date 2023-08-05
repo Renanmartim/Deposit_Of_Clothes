@@ -18,11 +18,13 @@ The API provides the following endpoints:
 
 <ul>
 <li>/products: Gets a list of all products.</li>
-<li>/products/{productId}: Gets a specific product by ID.</li>
-<li>/products: Creates a new product.</li>
-<li>/products/{productId}: Updates an existing product.</li>
-<li>/products/{productId}: Deletes an existing product.</li>
+<li>/products/price-biggest: Gets a list of all products from biggest to smallest.</li>
+<li>/products/price-lowest: Gets a list of all products from smallest to largest.</li>
+<li>/products/save: Creates a new product.</li>
+<li>/products/put: Updates an existing product.</li>
+<li>/products/delete/{name}: Deletes an existing product.</li>
 </ul>
+
 <h2>Examples of requests</h2>
 
 Here are some examples of requests you can use to interact with the API:
