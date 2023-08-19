@@ -62,7 +62,7 @@ PUT http://localhost:8080/products/put
 </li>
 <li>Delete an existing product:
 <pre>
-DELETE http://localhost:8080/products//delete/{name}
+DELETE http://localhost:8080/products/delete/{name}
 </pre>
 </li>
 </ul>
