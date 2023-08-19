@@ -50,11 +50,10 @@ public class ServiceDepositClothes {
 
     }
 
-    public ResponseEntity<DepositClothes> putProduct(DepositClothes depositClothes) {
-        DepositClothes depositClothesVerify = repositoryDepositClothes.findByName(depositClothes.getName());
+    public ResponseEntity<DepositClothes> putProduct(String name, DepositClothes depositClothes) {
+        DepositClothes depositClothesVerify = repositoryDepositClothes.findByName(name);
 
         if (depositClothesVerify != null) {
-            repositoryDepositClothes.delete(depositClothesVerify);
             repositoryDepositClothes.save(depositClothes);
             return ResponseEntity.ok(depositClothes);
         }
