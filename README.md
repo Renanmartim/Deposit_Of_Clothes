@@ -52,7 +52,7 @@ POST http://localhost:8080/products/save
 </li>
 <li>Update an existing product:
 <pre>
-PUT http://localhost:8080/products/put
+PUT http://localhost:8080/products/put/{name}
 {
    "name": "New Product Name",
    "description": "New Product Description",
