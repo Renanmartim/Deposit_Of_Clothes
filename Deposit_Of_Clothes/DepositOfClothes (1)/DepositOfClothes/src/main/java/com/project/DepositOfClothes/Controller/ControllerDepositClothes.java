@@ -41,9 +41,9 @@ public class ControllerDepositClothes {
         return serviceDepositClothes.deleteProduct(name);
     }
 
-    @PutMapping("/put")
-    public ResponseEntity<DepositClothes> putProduct(@RequestBody DepositClothes depositClothes) {
-        return serviceDepositClothes.putProduct(depositClothes);
+    @PutMapping("/put/{name}")
+    public ResponseEntity<DepositClothes> putProduct(@PathVariable String name, @RequestBody DepositClothes depositClothes) {
+        return serviceDepositClothes.putProduct(name, depositClothes);
     }
 
 }
